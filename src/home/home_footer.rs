@@ -6,7 +6,7 @@ use leptos_icons::*;
 pub fn HomeFooter() -> impl IntoView {
     let time = Local::now().year().to_string();
     view! {
-        <div class="py-4 mx-20 md:flex text-sm space-x-2 items-center justify-around">
+        <div class="py-4 mx-20 flex flex-col md:flex-row text-sm space-x-2 items-center justify-around">
             <div class="flex space-x-2 items-center justify-center">
                 <p>"Built with "</p>
                 <Icon icon=icondata::FaFaceGrinHeartsSolid />
