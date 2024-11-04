@@ -13,7 +13,7 @@ pub fn HomeFooter() -> impl IntoView {
                 <p>"using Rust & Leptos"</p>
             </div>
 
-            <div>"Blessing Kodze "{time}</div>
+            <div class="text-sm">"Blessing Kodze "{time}</div>
         </div>
     }
 }
