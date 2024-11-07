@@ -2,6 +2,7 @@
 title: My website
 description: The tools I used to create this website.
 date: 2024-06-12
+tags: Next.js, Typescript, Rust
 published: true
 ---
 
