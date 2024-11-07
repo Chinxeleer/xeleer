@@ -121,3 +121,6 @@ lib-default-features = false
 #
 # Optional. Defaults to "release".
 lib-profile-release = "wasm-release"
+
+# Things I added on my own
+wasm-bindged = "=0.2.93"
