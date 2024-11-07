@@ -31,25 +31,22 @@ pub fn Nav() -> impl IntoView {
         <nav class="flex text-pink-100 justify-center">
             <ul class="flex flex-col md:flex-row py-4 items-center space-x-4">
                 <div class="flex">
-                    {links
+                    {
+                        links
                         .into_iter()
                         .map(|n| {
                             view! {
                                 {move || {
                                     if n.name == "Home" {
                                         view! {
-                                            <A href=n.href>
-                                                <h1 class="px-2  py-2 text-base antialiased md:text-xl font-bold hover:text-pink-200">
+                                            <A href=n.href class="px-2  py-2 text-base antialiased md:text-xl font-bold hover:text-pink-200">
                                                 "Blessing Kodze"
-                                                </h1>
                                             </A>
                                         }
                                     } else {
                                         view! {
-                                            <A href=n.href>
-                                                <p class="px-2 md:px-4 py-2 font-normal hover:underline hover:text-pink-200 underline-offset-4 decoration-2">
+                                            <A href=n.href class="px-2 md:px-4 py-2 font-normal hover:underline hover:text-pink-200 underline-offset-4 decoration-2">
                                                     {n.name}
-                                                </p>
                                             </A>
                                         }
                                     }
@@ -57,7 +54,8 @@ pub fn Nav() -> impl IntoView {
 
                             }
                         })
-                        .collect_view()}
+                        .collect_view()
+                    }
                 </div>
                 <div class="flex space-x-4">
                     <A href="https://github.com/Chinxeleer">

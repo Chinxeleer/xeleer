@@ -7,13 +7,24 @@ pub struct PostMetadata {
     pub title: String,
     pub date: String,
     pub description: String,
+    pub tags: String,
 }
 
 impl PostMetadata {
     pub fn create_href(&self) -> String {
-        let some = self.title.replace(' ', "-").to_lowercase();
-        dbg!(&some);
-        some
+        self.title.replace(' ', "-").to_lowercase()
+    }
+    pub fn get_tags(&self) -> Option<Vec<String>> {
+        let res: Vec<String> = self
+            .tags
+            .split(',')
+            .map(|tag| tag.trim().to_string())
+            .collect();
+        if res.is_empty() {
+            return None;
+        }
+
+        Some(res)
     }
 }
 
