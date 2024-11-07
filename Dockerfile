@@ -19,7 +19,6 @@ RUN rustup target add wasm32-unknown-unknown
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
     && apt-get install -y nodejs
 
-RUN cargo update -p wasm-bindgen --precise 0.2.95
 
 # Make an /app dir, which everything will eventually live in
 RUN mkdir -p /app
