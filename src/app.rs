@@ -12,7 +12,7 @@ pub fn App() -> impl IntoView {
     leptos_image::provide_image_context();
     // Provides context that manages stylesheets, titles, meta tags, etc.
     provide_meta_context();
-    let posts = create_resource(|| (), |_| async move { get_posts().await });
+    let posts = create_local_resource(|| (), |_| async move { get_posts().await });
     provide_context(posts);
     view! {
 

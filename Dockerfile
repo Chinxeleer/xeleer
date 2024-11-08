@@ -12,7 +12,6 @@ RUN cp cargo-binstall /usr/local/cargo/bin
 
 # Install cargo-leptos
 RUN cargo binstall --version 0.2.20 cargo-leptos -y
-
 # Add the WASM target
 RUN rustup target add wasm32-unknown-unknown
 

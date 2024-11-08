@@ -1,6 +1,7 @@
 ---
 title: Adding your terminal app to your PATH environment in Linux
 description: This is a guide to making your terminal app accessible from anywhere in your terminal directory by just calling a single identifier or name of the app in the terminal.
+tags: Linux, Rust, Terminal, PATH
 date: 2024-06-12
 published: true
 ---

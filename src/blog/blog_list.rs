@@ -22,6 +22,8 @@ pub fn BlogList() -> impl IntoView {
 
     <div class="mx-auto">
             <div class="min-h-full mx-auto space-y-4 mt-10 overflow-scroll">
+            <ul>
+            <Transition fallback= move || view!{<div>Loading...</div>}>
             {move ||{
                      posts().map(|posts| {
                             match posts{
@@ -30,20 +32,13 @@ pub fn BlogList() -> impl IntoView {
                             .get(&PostType::Blog);
                         if let Some(posts_data) = display_post {
                             view! {
-                                {posts_data.iter().map(|value|{
+                                {
+                                    posts_data.iter().map(|value|{
                                     view! {
-                                        <BlogCard title={value.post_metadata.title.clone()} link=value.post_metadata.create_href() date=value.post_metadata.date.clone() />
+                                        <li><BlogCard title={value.post_metadata.title.clone()} link=value.post_metadata.create_href() date=value.post_metadata.date.clone() tags=value.post_metadata.get_tags() /></li>
                                     }}
-                                ).collect::<Vec<_>>()
+                                    ).collect_view()
                                 }
-
-
-                                // <Title text=post.post_metadata.title.clone()/>
-                                // <Meta
-                                //     name="description"
-                                //     content=post.post_metadata.description.clone()
-                                // />
-                                // <article class="prose prose:text-purple-200" inner_html=post.post_content.clone()></article>
                             }
                                 .into_view()
                         } else {
@@ -58,6 +53,8 @@ pub fn BlogList() -> impl IntoView {
 
                         }})
                 }}
+            </Transition >
+            </ul>
             </div>
     </div>}
 }
