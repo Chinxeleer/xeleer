@@ -5,7 +5,6 @@ pub mod error_template;
 pub mod fileserv;
 pub mod home;
 pub mod projects;
-pub mod resume;
 pub mod routes;
 pub mod server_functions;
 
