@@ -16,7 +16,7 @@ pub fn MainRoutes() -> impl IntoView {
         <Title text="chinxeleer" />
 
         // content for this welcome page
-        <main class="bg-slate-800 text-pink-200 min-h-screen ">
+        <main class="bg-slate-800 font-mono text-pink-200 min-h-screen ">
             <div class="max-w-5xl mx-auto ">
                 <Routes>
                     <Route path="" view=HomePage>

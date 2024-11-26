@@ -36,7 +36,7 @@ pub fn Nav() -> impl IntoView {
                                         view! {
                                             <A
                                                 href=n.href
-                                                class="px-2  py-2 text-base antialiased md:text-xl font-bold hover:text-pink-200"
+                                                class="px-2  py-2 text-purple-300 text-base antialiased md:text-xl font-bold hover:text-pink-200"
                                             >
                                                 "Blessing Kodze"
                                             </A>

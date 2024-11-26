@@ -28,8 +28,8 @@ pub fn BlogCard(
 #[component]
 fn CardItem(title: String) -> impl IntoView {
     view! {
-        <div class="rounded-xl bg-purple-200 px-2">
-            <p class="text-sm text-slate-900 font-bold">{title}</p>
+        <div class="rounded-xl bg-red-300 px-2">
+            <p class="text-sm text-purple-700 font-bold">{title}</p>
         </div>
     }
 }
