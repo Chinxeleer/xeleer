@@ -17,7 +17,7 @@ pub fn MainRoutes() -> impl IntoView {
 
         // content for this welcome page
         <main class="bg-slate-800 font-mono text-pink-200 min-h-screen ">
-            <div class="max-w-5xl mx-auto ">
+            <div class="max-w-5xl mx-auto">
                 <Routes>
                     <Route path="" view=HomePage>
                         <Route path="" view=HomeHero />

@@ -23,6 +23,7 @@ pub fn Nav() -> impl IntoView {
             href: "projects",
         },
     ];
+
     view! {
         <nav class="flex text-pink-100 justify-center">
             <ul class="flex flex-col md:flex-row py-4 items-center space-x-4">

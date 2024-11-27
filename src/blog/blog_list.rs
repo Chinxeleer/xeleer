@@ -19,8 +19,8 @@ pub fn BlogList() -> impl IntoView {
         <Meta name="description" content="chinxeleer's backdoor innovative thoughts" />
 
         <div class="mx-auto">
-            <div class="min-h-full mx-auto space-y-4 mt-10 overflow-scroll">
-                <ul>
+            <div class="min-h-full mx-auto mt-10 overflow-scroll">
+                <ul class="space-y-4">
                     <Transition fallback=move || {
                         view! { <div>Loading...</div> }
                     }>

@@ -29,7 +29,6 @@ pub fn HomeHero() -> impl IntoView {
                         I’m particularly drawn to Rust 🦀 and web development,
                         and I aim to build as much as possible in Rust — including this very website."
                     </p>
-
                     <h3 class="text-xl text-purple-300 font-bold">"🔨 Projects"</h3>
                     <p class="px-1">
                         "My journey as a developer has taken me through a diverse range of projects:"
