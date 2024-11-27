@@ -38,6 +38,7 @@ pub fn HomeHero() -> impl IntoView {
                             <span class="font-bold text-purple-200">"Terminal Applications"</span>
                             " – From efficient, minimalist tools to full-scale games."
                         </li>
+
                         <li>
                             <span class="font-bold text-purple-200">"APIs and Web Services"</span>
                             " – Crafting backend solutions with reliability and performance in mind."
