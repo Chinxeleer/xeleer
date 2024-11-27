@@ -12,13 +12,14 @@ RUN cp cargo-binstall /usr/local/cargo/bin
 
 # Install cargo-leptos
 RUN cargo binstall --version 0.2.20 cargo-leptos -y
+
 # Add the WASM target
 RUN rustup target add wasm32-unknown-unknown
 
 # Install Node.js (LTS version)
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
-    && apt-get install -y nodejs
-
+  && apt-get install -y nodejs
+RUN npx tailwindcss -i style/tailwind.css -o target/site/css/tailwind.css
 
 # Make an /app dir, which everything will eventually live in
 RUN mkdir -p /app
@@ -46,6 +47,9 @@ COPY --from=builder /app/target/site /app/site
 
 # Copy Cargo.toml if it’s needed at runtime
 COPY --from=builder /app/Cargo.toml /app/
+
+# Set Tailwind version
+ENV LEPTOS_TAILWIND_VERSION="v3.4.15"
 
 # Set any required env variables and
 ENV RUST_LOG="info"
