@@ -19,7 +19,7 @@ RUN rustup target add wasm32-unknown-unknown
 # Install Node.js (LTS version)
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
   && apt-get install -y nodejs
-RUN npx tailwindcss -i style/tailwind.css -o target/site/css/tailwind.css
+# RUN npx tailwindcss -i style/tailwind.css -o target/site/css/tailwind.css
 
 # Make an /app dir, which everything will eventually live in
 RUN mkdir -p /app
