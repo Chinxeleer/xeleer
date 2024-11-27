@@ -17,7 +17,7 @@ pub fn ProjectsPage() -> impl IntoView {
                     )
                     link=String::from("https://github.com/Chinxeleer/shellinx")
                     tags=Some(vec![String::from("Rust"), String::from("Shell")])
-                    picture=String::from("projects/shellinx.png")
+                    picture=String::from("cardimgs/shellinx.png")
                 />
 
             </div>
