@@ -25,7 +25,7 @@ pub fn Nav() -> impl IntoView {
     ];
 
     view! {
-        <nav class="flex text-pink-100 justify-center">
+        <nav class="flex text-rose-300 justify-center">
             <ul class="flex flex-col md:flex-row py-4 items-center space-x-4">
                 <div class="flex">
                     {links
@@ -63,7 +63,7 @@ pub fn Nav() -> impl IntoView {
                             icon=icondata::AiGithubFilled
                             width="1.5rem"
                             height="2rem"
-                            class="hover:text-purple-200"
+                            class="text-purple-300 hover:text-rose-300"
                         />
                     </A>
                     <A href="https://www.linkedin.com/in/blessing-kodze-a86302212/">
@@ -71,7 +71,7 @@ pub fn Nav() -> impl IntoView {
                             icon=icondata::AiLinkedinFilled
                             width="1.5rem"
                             height="2rem"
-                            class="hover:text-purple-200"
+                            class="hover:text-purple-300"
                         />
                     </A>
                 </div>

@@ -6,10 +6,10 @@ use leptos_icons::*;
 pub fn HomeFooter() -> impl IntoView {
     let time = Local::now().year().to_string();
     view! {
-        <div class="py-4 mx-20 flex flex-col md:flex-row space-x-2 items-center justify-around">
+        <div class="py-4 mx-20 flex text-purple-300 flex-col md:flex-row space-x-2 items-center justify-around">
             <div class="hidden md:flex space-x-2 items-center text-sm justify-center">
                 <p class="">"Built with "</p>
-                <Icon icon=icondata::FaFaceGrinHeartsSolid />
+                <Icon class="text-rose-300" icon=icondata::FaFaceGrinHeartsSolid />
                 <p>"using Rust & Leptos"</p>
             </div>
 

@@ -4,7 +4,7 @@ use leptos_image::Image;
 #[component]
 pub fn HomeHero() -> impl IntoView {
     view! {
-        <main class="flex flex-col text-pink-100 items-center mt-4">
+        <main class="flex flex-col text-rose-300 items-center mt-4">
             <div class="max-w-5xl mx-auto space-y-10">
                 // <!-- Social Links Section -->
                 <div class="flex rounded-full justify-center">
@@ -35,18 +35,16 @@ pub fn HomeHero() -> impl IntoView {
                     </p>
                     <ul class="list-disc pl-5">
                         <li>
-                            <span class="font-bold text-purple-200">"Terminal Applications"</span>
+                            <span class="font-bold text-rose-200">"Terminal Applications"</span>
                             " – From efficient, minimalist tools to full-scale games."
                         </li>
 
                         <li>
-                            <span class="font-bold text-purple-200">"APIs and Web Services"</span>
+                            <span class="font-bold text-rose-200">"APIs and Web Services"</span>
                             " – Crafting backend solutions with reliability and performance in mind."
                         </li>
                         <li>
-                            <span class="font-bold text-purple-200">
-                                "Advent of Code Solutions"
-                            </span>
+                            <span class="font-bold text-rose-200">"Advent of Code Solutions"</span>
                             " – Tackling complex, algorithmic challenges during the holiday season."
                         </li>
                     </ul>

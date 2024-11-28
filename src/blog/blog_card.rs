@@ -9,10 +9,10 @@ pub fn BlogCard(
     tags: Option<Vec<String>>,
 ) -> impl IntoView {
     view! {
-        <A href=link class="text-purple-100">
+        <A href=link class="text-purple-300">
             <div class="w-[400px] md:w-[600px] flex flex-col rounded-lg shadow-sm p-4 md:p-5 bg-slate-900 border border-rose-300">
                 <h3 class="text-lg font-bold">{title}</h3>
-                <p class="mt-1 text-xs uppercase text-slate-300 justify-end">{date}</p>
+                <p class="mt-1 text-xs uppercase text-rose-100 justify-end">{date}</p>
                 <div class="flex space-x-2 mt-2">
                     {tags
                         .unwrap_or_default()
