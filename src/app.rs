@@ -15,25 +15,14 @@ pub fn App() -> impl IntoView {
     let posts = create_local_resource(|| (), |_| async move { get_posts().await });
     provide_context(posts);
     view! {
-
-
-        // injects a stylesheet into the document <head>
-        // id=leptos means cargo-leptos will hot-reload this stylesheet
-        <Stylesheet id="leptos" href="/pkg/xeleer.css"/>
-
-        // sets the document title
-        <Title text="chinxeleer"/>
-
+        <Stylesheet id="leptos" href="/pkg/xeleer.css" />
         // content for this welcome page
         <Router fallback=|| {
             let mut outside_errors = Errors::default();
             outside_errors.insert_with_default_key(AppError::NotFound);
-            view! {
-                <ErrorTemplate outside_errors/>
-            }
-            .into_view()
+            view! { <ErrorTemplate outside_errors /> }.into_view()
         }>
-            <MainRoutes/>
+            <MainRoutes />
         </Router>
     }
 }
