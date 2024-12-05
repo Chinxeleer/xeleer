@@ -41,7 +41,7 @@ pub fn BlogView() -> impl IntoView {
                                                         content=post.post_metadata.description.clone()
                                                     />
                                                     <article
-                                                        class="prose space-y-4 prose-sm md:prose-lg text-wrap prose-pre:p-2 prose-pre:m-0  leading-loose prose-p:text-rose-300 prose-strong:text-rose-200 tracking-tight prose-code:text-rose-100  prose-p:text-base prose-headings:text-purple-300 prose-slate prose-a:text-rose-200 underline-offset-2 decoration-2 text-justify prose-h1:text-center prose-h2:text-2xl prose-h1:text-3xl pb-20"
+                                                        class="prose space-y-4 prose-li:text-rose-300 prose-ol:text-purple-300 prose-ul:text-purple-300 prose-sm md:prose-lg text-wrap prose-pre:p-2 prose-pre:m-0  leading-loose prose-p:text-rose-300 prose-strong:text-rose-200 tracking-tight prose-code:text-rose-100  prose-p:text-base prose-headings:text-purple-300 prose-slate prose-a:text-rose-200 underline-offset-2 decoration-2 text-justify prose-h1:text-center prose-h2:text-2xl prose-h1:text-3xl pb-20"
                                                         inner_html=post.post_content.clone()
                                                     ></article>
                                                 }

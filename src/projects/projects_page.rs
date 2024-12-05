@@ -5,10 +5,7 @@ use crate::projects::project_card::ProjectCard;
 #[component]
 pub fn ProjectsPage() -> impl IntoView {
     view! {
-        <main class="flex flex-col space-y-2 md:px-20">
-            <div class="mx-auto">
-                <h1 class="font-bold text-xl">Projects</h1>
-            </div>
+        <main class="flex flex-col space-y-2 mt-10 md:px-20">
             <div class="flex flex-col md:flex-row flex-wrap gap-4 justify-center align-center">
                 <ProjectCard
                     title=String::from("Shellinx Shell")
