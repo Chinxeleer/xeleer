@@ -1,7 +1,7 @@
 ---
 title: Voreanation
 description: Donations web app to solve problem of catered residence students throwing away food they get from DH which they forget to eat or don't get a chance to do so.
-tags: Axum, Nextjs, SeaORM, Typescript, Postgres, Rust
+tags: Axum, Nextjs, SeaORM, Postgres
 date: 2024-12-05
 published: true
 ---
