@@ -49,7 +49,7 @@ pub fn HomeHero() -> impl IntoView {
                         </li>
                     </ul>
                     <p>
-                        "Each project is an opportunity to explore new areas and expand my undetext-purple-200rstanding of programming, Rust, and mathematics."
+                        "Each project is an opportunity to explore new areas and expand my understanding of programming, Rust, and mathematics."
                     </p>
 
                     <h3 class="text-xl text-purple-300 font-bold">"🐧 Linux Enthusiast"</h3>
